@@ -44,4 +44,14 @@ class qbehaviour_regexpadaptivewithhelpnopenalty_renderer extends qbehaviour_reg
     protected function total_penalties_info() {
         return '';
     }    
+
+    // display the "Help" button
+    public function controls(question_attempt $qa, question_display_options $options) {
+        $helpmode = $qa->get_question()->usehint;
+        switch ($helpmode) {
+            case 1 : $helptext = get_string('getletter', 'qbehaviour_regexpadaptivewithhelpnopenalty'); break;
+            case 2 : $helptext = get_string('getword', 'qbehaviour_regexpadaptivewithhelpnopenalty'); break;
+        }
+        return parent::controls($qa, $options, $helptext);
+    }    
 }

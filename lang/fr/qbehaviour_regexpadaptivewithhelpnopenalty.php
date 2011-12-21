@@ -23,4 +23,6 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+$string['getletter'] = 'Demander une lettre';
+$string['getword'] = 'Demander un mot';
 $string['pluginname'] = 'Mode RegExp Adaptatif avec aide (sans pénalités)';
