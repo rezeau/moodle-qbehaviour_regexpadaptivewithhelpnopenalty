@@ -34,4 +34,5 @@ $plugin->dependencies = array(
 );
 
 $plugin->maturity  = MATURITY_STABLE;
+$plugin->release = '2.3.0 for Moodle 2.3+';
 
