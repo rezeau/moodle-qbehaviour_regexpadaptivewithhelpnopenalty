@@ -19,7 +19,7 @@
  *
  * @package    qbehaviour
  * @subpackage regexpadaptivewithhelpnopenalty
- * @copyright  2011 Joseph R�zeau
+ * @copyright  2011 Joseph Rezeau
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -31,7 +31,7 @@ require_once(dirname(__FILE__) . '/../regexpadaptivewithhelp/behaviour.php');
 /**
  * Question behaviour for regexpadaptivewithhelp mode, with no penalties.
  *
- * @copyright  2011 Joseph R�zeau
+ * @copyright  2011 Joseph Rezeau
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class qbehaviour_regexpadaptivewithhelpnopenalty extends qbehaviour_regexpadaptivewithhelp {
