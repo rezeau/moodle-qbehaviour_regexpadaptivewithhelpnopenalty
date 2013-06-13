@@ -40,11 +40,11 @@ class qbehaviour_regexpadaptivewithhelpnopenalty extends qbehaviour_regexpadapti
     public static function get_required_behaviours() {
         return array('regexpadaptivewithhelp');
     }
-    
+
     protected function adjusted_fraction($fraction, $prevtries, $helpnow = 0) {
         return $fraction;
     }
-    
+
     public function get_help_penalty($penalty, $dp, $help) {
         return '';
     }

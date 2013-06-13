@@ -37,9 +37,12 @@ require_once(dirname(__FILE__) . '/../regexpadaptivewithhelp/renderer.php');
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class qbehaviour_regexpadaptivewithhelpnopenalty_renderer extends qbehaviour_regexpadaptivewithhelp_renderer {
-    protected function grading_details(qbehaviour_adaptive_mark_details $details, question_display_options $options) {
-        return '';
+    protected function grading_details(qbehaviour_adaptive_mark_details $details,
+                    question_display_options $options) {
+        $mark = $details->get_formatted_marks($options->markdp);
+        return get_string('gradingdetails', 'qbehaviour_adaptive', $mark);
     }
+
     protected function disregarded_info() {
         return '';
     }
