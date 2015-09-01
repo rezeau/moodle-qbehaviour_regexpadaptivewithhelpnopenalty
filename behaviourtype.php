@@ -15,14 +15,23 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'qbehaviour_adaptivenopenalty', language 'en'.
+ * Question behaviour type for adaptive behaviour.
  *
- * @package    qbehaviour
- * @subpackage adaptivenopenalty
- * @copyright  2009 The Open University
+ * @package    qbehaviour_adaptive
+ * @copyright  2013 Joseph Rézeau
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['getletter'] = 'Demander une lettre';
-$string['getword'] = 'Demander un mot';
-$string['pluginname'] = 'Mode RegExp Adaptatif avec aide (sans pénalités)';
+
+defined('MOODLE_INTERNAL') || die();
+
+require_once(dirname(__FILE__) . '/../adaptive/behaviourtype.php');
+
+/**
+ * Question behaviour type information for adaptive behaviour.
+ *
+ * @copyright  2013 Joseph Rézeau
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class qbehaviour_regexpadaptivewithhelpnopenalty_type extends qbehaviour_regexpadaptivewithhelp_type {
+}

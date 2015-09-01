@@ -19,19 +19,17 @@
  *
  * @package    qbehaviour
  * @subpackage regexpadaptivewithhelpnopenalty
- * @copyright  2011-2012 Joseph Rézeau
+ * @copyright  2011-2012 Joseph Rï¿½zeau
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'qbehaviour_regexpadaptivewithhelpnopenalty';
-$plugin->version  = 2012022600;
-
-$plugin->requires = 2011070102.03;
+$plugin->version  = 2015090100;
+$plugin->requires = 2014111000; // Moodle version.
 $plugin->dependencies = array(
-    'qbehaviour_regexpadaptivewithhelp' => 2012022600
+    'qbehaviour_regexpadaptivewithhelp' => 2015090100
 );
-
+$plugin->release = '2.8.0 for Moodle 2.8';
 $plugin->maturity  = MATURITY_STABLE;
-
