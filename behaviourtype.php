@@ -26,6 +26,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 require_once(dirname(__FILE__) . '/../adaptive/behaviourtype.php');
+require_once(dirname(__FILE__) . '/../regexpadaptivewithhelp/behaviourtype.php');
 
 /**
  * Question behaviour type information for adaptive behaviour.
