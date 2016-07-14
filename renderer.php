@@ -33,26 +33,17 @@ require_once(dirname(__FILE__) . '/../regexpadaptivewithhelp/renderer.php');
  * Renderer for outputting parts of a question belonging to the legacy
  * adaptive (no penalties) behaviour.
  *
- * @copyright  2011 Joseph R�zeau
+ * @copyright  2011 Joseph Rezeau
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class qbehaviour_regexpadaptivewithhelpnopenalty_renderer extends qbehaviour_regexpadaptivewithhelp_renderer {
-    protected function penalty_info(question_attempt $qa, $mark,
-            question_display_options $options) {
-        return '';
+    protected function grading_details(qbehaviour_adaptive_mark_details $details,
+                    question_display_options $options) {
+        $mark = $details->get_formatted_marks($options->markdp);
+        return get_string('gradingdetails', 'qbehaviour_adaptive', $mark);
     }
 
-    protected function total_penalties_info() {
+    protected function disregarded_info() {
         return '';
-    }    
-
-    // display the "Help" button
-    public function controls(question_attempt $qa, question_display_options $options, $helptext='') {
-        $helpmode = $qa->get_question()->usehint;
-        switch ($helpmode) {
-            case 1 : $helptext = get_string('getletter', 'qbehaviour_regexpadaptivewithhelpnopenalty'); break;
-            case 2 : $helptext = get_string('getword', 'qbehaviour_regexpadaptivewithhelpnopenalty'); break;
-        }
-        return parent::controls($qa, $options, $helptext);
-    }    
+    }
 }
