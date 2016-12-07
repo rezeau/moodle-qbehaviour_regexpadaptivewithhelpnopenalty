@@ -15,21 +15,24 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version information for the calculated question type.
+ * Question behaviour type for adaptive behaviour.
  *
- * @package    qbehaviour
- * @subpackage regexpadaptivewithhelpnopenalty
- * @copyright  2011-2012 Joseph R�zeau
+ * @package    qbehaviour_adaptive
+ * @copyright  2013 Joseph Rézeau
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->component = 'qbehaviour_regexpadaptivewithhelpnopenalty';
-$plugin->version  = 2016113000;
-$plugin->requires = 2015051100; // Moodle version.
-$plugin->dependencies = array(
-    'qbehaviour_regexpadaptivewithhelp' => 2016113000
-);
-$plugin->release = '3.2.0 for Moodle 2.9-3.2';
-$plugin->maturity  = MATURITY_STABLE;
+require_once(dirname(__FILE__) . '/../adaptive/behaviourtype.php');
+require_once(dirname(__FILE__) . '/../regexpadaptivewithhelp/behaviourtype.php');
+
+/**
+ * Question behaviour type information for adaptive behaviour.
+ *
+ * @copyright  2013 Joseph Rézeau
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class qbehaviour_regexpadaptivewithhelpnopenalty_type extends qbehaviour_regexpadaptivewithhelp_type {
+}

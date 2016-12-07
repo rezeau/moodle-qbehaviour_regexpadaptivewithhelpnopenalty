@@ -19,7 +19,7 @@
  *
  * @package    qbehaviour
  * @subpackage regexpadaptivewithhelpnopenalty
- * @copyright  2011 Joseph R�zeau
+ * @copyright  2011 Joseph Rezeau
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -31,7 +31,7 @@ require_once(dirname(__FILE__) . '/../regexpadaptivewithhelp/behaviour.php');
 /**
  * Question behaviour for regexpadaptivewithhelp mode, with no penalties.
  *
- * @copyright  2011 Joseph R�zeau
+ * @copyright  2011 Joseph Rezeau
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class qbehaviour_regexpadaptivewithhelpnopenalty extends qbehaviour_regexpadaptivewithhelp {
@@ -40,11 +40,11 @@ class qbehaviour_regexpadaptivewithhelpnopenalty extends qbehaviour_regexpadapti
     public static function get_required_behaviours() {
         return array('regexpadaptivewithhelp');
     }
-    
+
     protected function adjusted_fraction($fraction, $prevtries, $helpnow = 0) {
         return $fraction;
     }
-    
+
     public function get_help_penalty($penalty, $dp, $help) {
         return '';
     }
