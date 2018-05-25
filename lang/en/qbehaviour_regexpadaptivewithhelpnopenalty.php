@@ -26,3 +26,5 @@
 $string['getletter'] = 'Get next letter';
 $string['getword'] = 'Get next word';
 $string['pluginname'] = 'RegExp Adaptive mode with Help (no penalties)';
+$string['privacy:metadata'] = 'The RegExp Adaptive mode with Help (no penalties) question behaviour plugin does not store any personal data.';
+
