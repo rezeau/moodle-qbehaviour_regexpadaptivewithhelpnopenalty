@@ -46,4 +46,13 @@ class qbehaviour_regexpadaptivewithhelpnopenalty_renderer extends qbehaviour_reg
     protected function disregarded_info() {
         return '';
     }
+
+    // Moved help strings to this function to get appropriate strings for the nopenalty behaviour.
+    public function help_msg() {
+        $helptexts = array();
+        $helptexts[1] = get_string('getletter', 'qbehaviour_regexpadaptivewithhelpnopenalty');
+        $helptexts[2] = get_string('getword', 'qbehaviour_regexpadaptivewithhelpnopenalty');
+        return $helptexts;
+    }
+
 }
