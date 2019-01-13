@@ -52,6 +52,7 @@ class qbehaviour_regexpadaptivewithhelpnopenalty_renderer extends qbehaviour_reg
         $helptexts = array();
         $helptexts[1] = get_string('getletter', 'qbehaviour_regexpadaptivewithhelpnopenalty');
         $helptexts[2] = get_string('getword', 'qbehaviour_regexpadaptivewithhelpnopenalty');
+        $helptexts[3] = get_string('getwordorpunctuation', 'qbehaviour_regexpadaptivewithhelpnopenalty');
         return $helptexts;
     }
 
