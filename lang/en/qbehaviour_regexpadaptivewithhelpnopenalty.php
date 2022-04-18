@@ -17,8 +17,7 @@
 /**
  * Strings for component 'qbehaviour_adaptivenopenalty', language 'en'.
  *
- * @package    qbehaviour
- * @subpackage regexpadaptivewithhelp
+ * @package    qbehaviour_regexpadaptivewithhelpnopenalty
  * @copyright  2011 Joseph Rézeau
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

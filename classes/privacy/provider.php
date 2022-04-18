@@ -24,8 +24,6 @@
 
 namespace qbehaviour_regexpadaptivewithhelpnopenalty\privacy;
 
-defined('MOODLE_INTERNAL') || die();
-
 /**
  * Privacy Subsystem for qbehaviour_regexpadaptivewithhelpnopenalty implementing null_provider.
  *

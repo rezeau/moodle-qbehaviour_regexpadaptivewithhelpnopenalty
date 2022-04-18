@@ -15,39 +15,45 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Renderer for outputting parts of a question belonging to the legacy
- * adaptive (no penalties) behaviour.
+ * Renderer for outputting parts of a question belonging to the legacy adaptive (no penalties) behaviour.
  *
- * @package    qbehaviour
+ * @package    qbehaviour_regexpadaptivewithhelpnopenalty
  * @subpackage adaptivenopenalty
  * @copyright  2009 The Open University
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
 
 defined('MOODLE_INTERNAL') || die();
 
 require_once(dirname(__FILE__) . '/../regexpadaptivewithhelp/renderer.php');
 
 /**
- * Renderer for outputting parts of a question belonging to the legacy
- * adaptive (no penalties) behaviour.
+ * Renderer for outputting parts of a question belonging to the legacy adaptive (no penalties) behaviour.
  *
  * @copyright  2011 Joseph Rezeau
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class qbehaviour_regexpadaptivewithhelpnopenalty_renderer extends qbehaviour_regexpadaptivewithhelp_renderer {
+    /**
+     * description
+     * @param qbehaviour_adaptive_mark_details $details the details.
+     * @param question_display_options $options the options
+     */
     protected function grading_details(qbehaviour_adaptive_mark_details $details,
                     question_display_options $options) {
         $mark = $details->get_formatted_marks($options->markdp);
         return get_string('gradingdetails', 'qbehaviour_adaptive', $mark);
     }
 
+    /**
+     * description
+     */
     protected function disregarded_info() {
         return '';
     }
-
-    // Moved help strings to this function to get appropriate strings for the nopenalty behaviour.
+    /**
+     * Moved help strings to this function to get appropriate strings for the nopenalty behaviour.
+     */
     public function help_msg() {
         $helptexts = array();
         $helptexts[1] = get_string('getletter', 'qbehaviour_regexpadaptivewithhelpnopenalty');

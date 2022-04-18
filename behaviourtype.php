@@ -17,11 +17,10 @@
 /**
  * Question behaviour type for adaptive behaviour.
  *
- * @package    qbehaviour_adaptive
- * @copyright  2013 Joseph Rézeau
+ * @package    qbehaviour_regexpadaptivewithhelpnopenalty
+ * @copyright  2022 Joseph Rézeau
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
 
 defined('MOODLE_INTERNAL') || die();
 

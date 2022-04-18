@@ -17,12 +17,10 @@
 /**
  * Question behaviour for the old adaptive mode, with no penalties.
  *
- * @package    qbehaviour
- * @subpackage regexpadaptivewithhelpnopenalty
+ * @package    qbehaviour_regexpadaptivewithhelpnopenalty
  * @copyright  2011 Joseph Rezeau
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
 
 defined('MOODLE_INTERNAL') || die();
 
@@ -35,16 +33,31 @@ require_once(dirname(__FILE__) . '/../regexpadaptivewithhelp/behaviour.php');
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class qbehaviour_regexpadaptivewithhelpnopenalty extends qbehaviour_regexpadaptivewithhelp {
+    /**
+    * description
+    */
     const IS_ARCHETYPAL = false;
-
+    /**
+     * description
+     */
     public static function get_required_behaviours() {
         return array('regexpadaptivewithhelp');
     }
-
+    /**
+     * description
+     * @param decimal $fraction the fraction.
+     * @param decimal $prevtries the previous tries.
+     * @param boolean $helpnow help status.
+     */
     protected function adjusted_fraction($fraction, $prevtries, $helpnow = 0) {
         return $fraction;
     }
-
+    /**
+     * description
+     * @param decimal $penalty the penalty.
+     * @param decimal $dp the dp.
+     * @param boolean $help help status.
+     */
     public function get_help_penalty($penalty, $dp, $help) {
         return '';
     }
