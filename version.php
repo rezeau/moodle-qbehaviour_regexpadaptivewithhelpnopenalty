@@ -31,5 +31,5 @@ $plugin->requires = 2016052300; // Moodle version.
 $plugin->dependencies = [
     'qbehaviour_regexpadaptivewithhelp' => 2024050200,
 ];
-$plugin->release = '4.4';
+$plugin->release = '4.5';
 $plugin->maturity = MATURITY_STABLE;
